@@ -34,5 +34,5 @@ elementize = memoFix (\fn str ->
           prefixes
 
 main = do args <- getArgs
-          putStrLn $ intercalate"\n"  $ map (intercalate " ")
+          putStrLn $ intercalate"\n" $ map (intercalate " ")
             (elementize $ filter isLetter $ concat args)
